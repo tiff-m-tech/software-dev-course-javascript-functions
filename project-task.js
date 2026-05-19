@@ -33,25 +33,65 @@ This activity reinforces:
 // ============================================
 
 // Script 1 - Greeting multiple users
-console.log("Welcome, Alice!");
-console.log("Welcome, Bob!");
-console.log("Welcome, Charlie!");
+// console.log("Welcome, Alice!");
+// console.log("Welcome, Bob!");
+// console.log("Welcome, Charlie!");
+
+function greet(name) {
+   console.log(`Welcome, ${name}`);
+}
+
+greet('Jim');
+greet('Bob');
+greet('Tim');
 
 // Script 2 - Sum calculation
 let num1 = 5, num2 = 10;
-let sum = num1 + num2;
-console.log("The sum of 5 and 10 is " + sum);
+// let sum = num1 + num2;
+// console.log("The sum of 5 and 10 is " + sum);
+
+function addNums(a, b) {
+   let sum = a +b;
+   console.log(`The sum of ${a} and ${b} is ${sum}`)
+   return sum;
+}
+
+addNums(num1, num2);
+addNums(1, 7);
+console.log(addNums(4, 6));
 
 // Script 3 - Product calculation
-let product = num1 * num2;
-console.log("The product of 5 and 10 is " + product);
+// let product = num1 * num2;
+// console.log("The product of 5 and 10 is " + product);
+
+function multiplyNums(a, b) {
+   let product = a +b;
+   console.log(`The product of ${a} and ${b} is ${product}`)
+   return product;
+}
+
+multiplyNums(num1, num2);
+multiplyNums(1, 7);
+console.log(multiplyNums(4, 6));
 
 // Script 4 - Print names from a list
 let names = ["Alice", "Bob", "Charlie"];
-console.log("Names in the list:");
-for (let i = 0; i < names.length; i++) {
-    console.log(names[i]);
+let moreNames = ["Tim", "Jim", "Bob"];
+
+// console.log("Names in the list:");
+// for (let i = 0; i < names.length; i++) {
+//     console.log(names[i]);
+// }
+
+function printNames(nameList) {
+   console.log("Names in the list:");
+   for (let name of nameList) {
+      console.log(name);
+   }
 }
+
+printNames(names)
+printNames(moreNames)
 
 /*
 ===========================================
