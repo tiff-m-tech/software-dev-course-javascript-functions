@@ -65,7 +65,7 @@ console.log(addNums(4, 6));
 // console.log("The product of 5 and 10 is " + product);
 
 function multiplyNums(a, b) {
-   let product = a +b;
+   let product = a * b;
    console.log(`The product of ${a} and ${b} is ${product}`)
    return product;
 }
